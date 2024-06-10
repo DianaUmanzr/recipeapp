@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/recipe_db
+    username: root
+    password: secret
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  application:
+    name: Recipe Application
+
+server:
+  port: 8080
+
+logging:
+  level:
+    root: INFO
+    com.viapath.recipe: DEBUG
+
+recipe:
+  api:
+    key: d2c072b1a93949308df378614427ffa8
